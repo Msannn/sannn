@@ -1,0 +1,51 @@
+/* Gaya Umum */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.surat-container {
+    width: 21cm; /* Ukuran A4 */
+    height: 29.7cm; /* Ukuran A4 */
+    padding: 2cm; /* Mengatur padding agar tidak terlalu besar */
+    margin: 0 auto;
+    background-color: white; /* Latar belakang putih untuk surat */
+    color: black; /* Teks hitam di dalam surat */
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.date {
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5; /* Menggunakan line-height dalam satuan relatif */
+    margin-bottom: 15px;
+}
+
+.closing {
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+/* Print Styling */
+@media print {
+    body, .surat-container {
+        margin: 0;
+        padding: 0;
+    }
+}
